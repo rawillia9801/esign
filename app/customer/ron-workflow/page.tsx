@@ -1,6 +1,7 @@
 import Header from '../../../components/Header'
 import ProfileBar from '../../../components/ProfileBar'
 import Link from 'next/link'
+import CustomerStatusWidget from '../../../components/CustomerStatusWidget'
 
 export default function RonWorkflow(){
  return (
@@ -19,12 +20,7 @@ export default function RonWorkflow(){
     </div>
 
     <div className="grid-2" style={{marginTop:'24px'}}>
-      <div className="card">
-        <h3>Current Request: ESV-22018</h3>
-        <p>Signer ID credential review pending.</p>
-        <p>Knowledge verification questionnaire not yet completed.</p>
-        <p>Live online session waiting for scheduling.</p>
-      </div>
+      <CustomerStatusWidget />
       <div className="card">
         <h3>Next Required Action</h3>
         <p>Please proceed to identity verification and customer credential confirmation before joining your notary session.</p>
