@@ -2,15 +2,189 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --midnight: #020617;
+  --navy: #08111f;
+  --slate: #0f172a;
+  --gold: #d8b35a;
+  --champagne: #f7ecd0;
+  --text: #f8fafc;
+  --muted: #b6c2d4;
+  --glass: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.13);
+}
+
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom right, #020617, #0f172a, #1e293b);
-  color: white;
+  background:
+    radial-gradient(circle at 15% 5%, rgba(216,179,90,.24), transparent 28%),
+    radial-gradient(circle at 88% 12%, rgba(59,130,246,.16), transparent 26%),
+    linear-gradient(135deg, var(--midnight), var(--navy) 42%, #111827);
+  color: var(--text);
+  min-height: 100vh;
 }
 
 a { text-decoration: none; color: inherit; }
 
-.container { max-width: 1200px; margin: auto; padding: 0 24px; }
-.card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 24px; }
-.btn { background: white; color: #0f172a; padding: 12px 22px; border-radius: 12px; font-weight: bold; display:inline-block; }
+input, textarea {
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 14px;
+  background: rgba(2,6,23,.55);
+  color: white;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder { color: #94a3b8; }
+
+.container { max-width: 1180px; margin: auto; padding: 0 24px; }
+
+.luxury-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+  background: rgba(2,6,23,.58);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  margin: 0 -24px;
+  padding: 20px 24px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--gold), #fff3c4);
+  color: #0f172a;
+  font-weight: 900;
+  box-shadow: 0 18px 45px rgba(216,179,90,.22);
+}
+
+.nav-pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: all .2s ease;
+}
+
+.nav-pill:hover {
+  color: white;
+  background: rgba(255,255,255,.08);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 26px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.24);
+}
+
+.card:hover {
+  border-color: rgba(216,179,90,.45);
+  transform: translateY(-2px);
+  transition: .25s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--champagne), var(--gold));
+  color: #111827;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  display:inline-block;
+  box-shadow: 0 18px 42px rgba(216,179,90,.23);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,.18);
+  color: white;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  display:inline-block;
+  background: rgba(255,255,255,.04);
+}
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero-title {
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: .96;
+  letter-spacing: -0.06em;
+  max-width: 950px;
+  margin: 18px 0;
+}
+
+.hero-copy {
+  font-size: clamp(18px, 2vw, 22px);
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.metric {
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--champagne);
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 24px;
+  padding: 40px 0 70px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 92px;
+  height: fit-content;
+}
+
+.sidebar-link {
+  display: block;
+  color: var(--muted);
+  padding: 12px 14px;
+  border-radius: 14px;
+  margin-bottom: 6px;
+}
+
+.sidebar-link.active, .sidebar-link:hover {
+  color: white;
+  background: rgba(255,255,255,.08);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #34d399;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .grid-3, .grid-4, .grid-2, .dashboard-layout { grid-template-columns: 1fr; }
+  .header nav { flex-wrap: wrap; justify-content: center; }
+  .hero-title { font-size: 48px; }
+}
