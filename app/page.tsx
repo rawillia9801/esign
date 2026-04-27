@@ -9,11 +9,12 @@ export default function Home() {
 
       <section style={{padding:'90px 0 70px'}}>
         <div className="eyebrow">Virginia Online Notary & E-Signature Services</div>
-        <h1 className="hero-title">Get Your Documents Signed, Notarized, and Completed Online — Quickly & Securely.</h1>
-        <p className="hero-copy">From affidavits and power of attorney forms to real estate documents, lender paperwork, and business agreements, E-Sign Virginia makes the online signing and notarization process simple, secure, and convenient from anywhere.</p>
+        <h1 className="hero-title">Get Documents Signed & Notarized Online Without Leaving Home.</h1>
+        <p className="hero-copy">Secure online notarization and electronic signature services for affidavits, real estate forms, lender paperwork, business agreements, title documents, and more — completed through a guided Virginia remote process.</p>
         <div style={{marginTop:'34px',display:'flex',gap:'14px',flexWrap:'wrap'}}>
-          <Link href="/register" className="btn">Create Secure Account</Link>
-          <Link href="/session" className="btn-secondary">Schedule Online Appointment</Link>
+          <Link href="/register" className="btn">Sign Up & Get Started</Link>
+          <Link href="/login" className="btn-secondary">Customer Login</Link>
+          <Link href="/session" className="btn-secondary">Book Appointment</Link>
         </div>
       </section>
 
@@ -59,16 +60,16 @@ export default function Home() {
         <div className="eyebrow">How The Process Works</div>
         <h2 style={{fontSize:'42px'}}>Simple 4-Step Online Completion</h2>
         <div className="grid-4" style={{marginTop:'24px'}}>
-          {['Create Account','Upload Documents','Meet Online','Receive Completed Copy'].map((step)=><div key={step} className="card">{step}</div>)}
+          {['Sign Up','Upload Documents','Meet Online','Receive Completed Copy'].map((step)=><div key={step} className="card">{step}</div>)}
         </div>
       </section>
 
       <section style={{padding:'90px 0 40px'}}>
         <div className="card" style={{textAlign:'center',padding:'60px 30px'}}>
           <div className="eyebrow">Need Help Right Away?</div>
-          <h2 style={{fontSize:'46px',maxWidth:'800px',margin:'16px auto'}}>Start Your Online Document Request In Minutes.</h2>
-          <p className="hero-copy" style={{margin:'0 auto'}}>Create your account, upload your documents, and let our secure online process guide you through the rest.</p>
-          <div style={{marginTop:'26px'}}><Link href="/register" className="btn">Get Started</Link></div>
+          <h2 style={{fontSize:'46px',maxWidth:'800px',margin:'16px auto'}}>Start Your Secure Online Request In Minutes.</h2>
+          <p className="hero-copy" style={{margin:'0 auto'}}>Create your account, upload your documents, and follow the guided process through completion.</p>
+          <div style={{marginTop:'26px'}}><Link href="/register" className="btn">Create Account Now</Link></div>
         </div>
       </section>
 
