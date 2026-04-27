@@ -4,38 +4,52 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <main className="container" style={{paddingTop:'20px', paddingBottom:'60px'}}>
+    <main className="container luxury-shell" style={{paddingTop:'0', paddingBottom:'60px'}}>
       <Header />
 
-      <section style={{padding:'90px 0'}}>
-        <h1 style={{fontSize:'64px',maxWidth:'850px',lineHeight:'1.1'}}>Virginia's Premier Electronic Signature & Online Notary Platform</h1>
-        <p style={{fontSize:'20px',maxWidth:'760px',opacity:.8}}>Professional secure online document processing designed for individuals, law firms, lenders, title agencies, and businesses requiring fast compliant remote approvals.</p>
-        <div style={{marginTop:'30px',display:'flex',gap:'18px'}}>
-          <Link href="/login" className="btn">Create Secure Account</Link>
-          <Link href="/session">Request Appointment</Link>
+      <section style={{padding:'90px 0 70px'}}>
+        <div className="eyebrow">Virginia Trusted Remote Document Execution</div>
+        <h1 className="hero-title">Elegant. Secure. Legally Trusted Electronic Signatures & Online Notary Services.</h1>
+        <p className="hero-copy">A premium client-facing digital execution platform built for urgent legal filings, lender paperwork, business agreements, affidavits, title documents, and high-trust remote verification workflows.</p>
+        <div style={{marginTop:'34px',display:'flex',gap:'14px',flexWrap:'wrap'}}>
+          <Link href="/login" className="btn">Open Secure Portal</Link>
+          <Link href="/session" className="btn-secondary">Book Priority Appointment</Link>
         </div>
       </section>
 
-      <section style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'20px'}}>
-        <div className="card"><h3>Customer Portal</h3><p>Upload files, verify identity, track appointments, and retrieve completed records.</p></div>
-        <div className="card"><h3>E-Notary Workspace</h3><p>Manage clients, journals, approvals, digital credentials, and archived sessions.</p></div>
-        <div className="card"><h3>Enterprise Security</h3><p>Encrypted delivery, signer verification workflow, and professional digital completion.</p></div>
+      <section className="grid-3">
+        <div className="card"><div className="metric">24/7</div><h3>Online Availability</h3><p>Fast digital workflow submission for individuals, firms, lenders, and agencies.</p></div>
+        <div className="card"><div className="metric">100%</div><h3>Encrypted Delivery</h3><p>Protected client data routing and premium document handling architecture.</p></div>
+        <div className="card"><div className="metric">2 Portals</div><h3>Dual Workspace Design</h3><p>Dedicated customer and commissioned professional access environments.</p></div>
       </section>
 
       <section style={{padding:'90px 0'}}>
-        <h2>How It Works</h2>
-        <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'18px'}}>
-          {['Create Account','Upload Files','Attend Online Meeting','Receive Completed Copy'].map((step)=><div key={step} className="card">{step}</div>)}
+        <div className="eyebrow">How The Process Works</div>
+        <h2 style={{fontSize:'42px'}}>Designed For Absolute Simplicity</h2>
+        <div className="grid-4" style={{marginTop:'24px'}}>
+          {['Create Secure Account','Upload Required Files','Attend Guided Online Meeting','Receive Completed Electronic Copy'].map((step)=><div key={step} className="card">{step}</div>)}
         </div>
       </section>
 
-      <section style={{padding:'40px 0'}}>
-        <h2>Why Choose E-Sign Virginia</h2>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'20px',marginTop:'20px'}}>
-          <div className="card">Fast turnaround for urgent legal and business documents.</div>
-          <div className="card">Professional online workflow designed for convenience and trust.</div>
-          <div className="card">Dedicated portals for both clients and commissioned service professionals.</div>
-          <div className="card">Scalable platform architecture ready for business growth.</div>
+      <section className="grid-2">
+        <div className="card">
+          <div className="eyebrow">Customer Experience</div>
+          <h2>Private Client Dashboard</h2>
+          <p>Track submissions, manage appointments, upload records, verify credentials, and retrieve completed files from one secure location.</p>
+        </div>
+        <div className="card">
+          <div className="eyebrow">Professional Workspace</div>
+          <h2>Commissioned E-Notary Operations Center</h2>
+          <p>Handle verification queues, transaction logs, digital seals, client archives, and completed processing records in an executive-grade portal.</p>
+        </div>
+      </section>
+
+      <section style={{padding:'90px 0 40px'}}>
+        <div className="card" style={{textAlign:'center',padding:'60px 30px'}}>
+          <div className="eyebrow">Priority Processing Available</div>
+          <h2 style={{fontSize:'46px',maxWidth:'800px',margin:'16px auto'}}>Need A High-Trust Legal Document Completed Quickly?</h2>
+          <p className="hero-copy" style={{margin:'0 auto'}}>Open your secure account and begin the premium guided digital workflow in minutes.</p>
+          <div style={{marginTop:'26px'}}><Link href="/login" className="btn">Begin Now</Link></div>
         </div>
       </section>
 
