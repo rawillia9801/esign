@@ -14,7 +14,7 @@ export default function CustomerDashboard(){
       <Link href="/customer/appointments" className="sidebar-link">Appointments</Link>
       <Link href="/customer/verification" className="sidebar-link">Verification</Link>
       <Link href="/customer/billing" className="sidebar-link">Billing</Link>
-      <Link href="/customer/documents" className="sidebar-link">Completed Records</Link>
+      <Link href="/customer/completed" className="sidebar-link">Completed Records</Link>
     </aside>
 
     <section>
@@ -30,16 +30,16 @@ export default function CustomerDashboard(){
       </div>
 
       <div className="grid-2" style={{marginTop:'22px'}}>
-        <div className="card"><h3>Upcoming Appointment</h3><p>Priority online guided document completion reserved in your queue.</p></div>
+        <div className="card"><h3>Upcoming Appointment</h3><p>Reference ESV-22018 reserved for April 29, 2:30 PM.</p></div>
         <div className="card"><h3>Fast Upload Center</h3><p>Submit legal files, affidavits, agreements, and business records securely.</p></div>
       </div>
 
       <div className="card" style={{marginTop:'22px'}}>
         <h3>Recent Activity Log</h3>
-        <p>• Warranty Deed Uploaded — Pending Review</p>
-        <p>• Appointment Reserved — April 29, 2:30 PM</p>
-        <p>• Verification Credentials Approved</p>
-        <p>• Prior Electronic Copy Delivered</p>
+        <p>• ESV-22018 Warranty Deed Uploaded — Pending Review</p>
+        <p>• ESV-22017 Appointment Reserved — April 29, 2:30 PM</p>
+        <p>• ESV-22016 Verification Credentials Approved</p>
+        <p>• ESV-22015 Electronic Copy Delivered</p>
       </div>
     </section>
    </div>
