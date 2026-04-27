@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import Header from '../../components/Header'
+import ProfileBar from '../../components/ProfileBar'
 
 export default function CustomerDashboard(){
  return (
@@ -7,15 +9,16 @@ export default function CustomerDashboard(){
    <div className="dashboard-layout">
     <aside className="card sidebar">
       <h3>Client Portal</h3>
-      <a className="sidebar-link active">Overview</a>
-      <a className="sidebar-link">Upload Files</a>
-      <a className="sidebar-link">Appointments</a>
-      <a className="sidebar-link">Verification</a>
-      <a className="sidebar-link">Billing</a>
-      <a className="sidebar-link">Completed Records</a>
+      <Link href="/customer" className="sidebar-link active">Overview</Link>
+      <Link href="/customer/documents" className="sidebar-link">Upload Files</Link>
+      <Link href="/customer/appointments" className="sidebar-link">Appointments</Link>
+      <Link href="/customer/verification" className="sidebar-link">Verification</Link>
+      <Link href="/customer/billing" className="sidebar-link">Billing</Link>
+      <Link href="/customer/documents" className="sidebar-link">Completed Records</Link>
     </aside>
 
     <section>
+      <ProfileBar />
       <div className="eyebrow">Secure Client Workspace</div>
       <h1 style={{fontSize:'48px'}}>Customer Dashboard</h1>
       <p style={{color:'#b6c2d4'}}>Manage submissions, appointment requests, verification status, and completed digital records.</p>
