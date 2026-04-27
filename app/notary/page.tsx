@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import Header from '../../components/Header'
+import ProfileBar from '../../components/ProfileBar'
 
 export default function NotaryDashboard(){
  return (
@@ -7,15 +9,16 @@ export default function NotaryDashboard(){
    <div className="dashboard-layout">
     <aside className="card sidebar">
       <h3>E-Notary Center</h3>
-      <a className="sidebar-link active">Operations</a>
-      <a className="sidebar-link">Pending Clients</a>
-      <a className="sidebar-link">Verification Queue</a>
-      <a className="sidebar-link">Digital Credentials</a>
-      <a className="sidebar-link">Journal Records</a>
-      <a className="sidebar-link">Completed Transactions</a>
+      <Link href="/notary" className="sidebar-link active">Operations</Link>
+      <Link href="/notary/pending" className="sidebar-link">Pending Clients</Link>
+      <Link href="/notary/verification" className="sidebar-link">Verification Queue</Link>
+      <Link href="/notary/credentials" className="sidebar-link">Digital Credentials</Link>
+      <Link href="/notary/transactions" className="sidebar-link">Journal Records</Link>
+      <Link href="/notary/transactions" className="sidebar-link">Completed Transactions</Link>
     </aside>
 
     <section>
+      <ProfileBar />
       <div className="eyebrow">Commissioned Professional Workspace</div>
       <h1 style={{fontSize:'48px'}}>E-Notary Operations Dashboard</h1>
       <p style={{color:'#b6c2d4'}}>Manage client queues, credential review, processing records, digital seals, and archived transaction completion.</p>
