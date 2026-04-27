@@ -15,14 +15,16 @@ export default function LoginPage(){
         <h2>Customer Portal Login</h2>
         <p style={{opacity:.7}}>For individuals, businesses, lenders, and legal clients.</p>
         <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'12px',marginTop:'16px'}} />
-        <input placeholder="Password" style={{width:'100%',padding:'14px',marginBottom:'16px'}} />
+        <input placeholder="Password" style={{width:'100%',padding:'14px',marginBottom:'8px'}} />
+        <div style={{fontSize:'13px',opacity:.6,marginBottom:'16px'}}>Secure client access • encrypted records • live request tracking</div>
         <Link href="/customer" className="btn">Enter Customer Workspace</Link>
       </div>
       <div className="card">
         <h2>E-Notary Professional Login</h2>
         <p style={{opacity:.7}}>For commissioned professionals and internal operations processing.</p>
         <input placeholder="Professional Email" style={{width:'100%',padding:'14px',marginBottom:'12px',marginTop:'16px'}} />
-        <input placeholder="Password" style={{width:'100%',padding:'14px',marginBottom:'16px'}} />
+        <input placeholder="Password" style={{width:'100%',padding:'14px',marginBottom:'8px'}} />
+        <div style={{fontSize:'13px',opacity:.6,marginBottom:'16px'}}>credential review • ron control • zoho automation relay</div>
         <Link href="/notary" className="btn">Enter Operations Center</Link>
       </div>
     </div>
