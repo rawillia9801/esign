@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
@@ -13,7 +14,7 @@ export default function Contact(){
       <input placeholder="Your Name" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <textarea placeholder="Tell us how we can assist" style={{width:'100%',padding:'14px',height:'180px'}} />
-      <div className="btn" style={{marginTop:'20px'}}>Send Secure Inquiry</div>
+      <Link href="/confirmation" className="btn" style={{marginTop:'20px'}}>Send Secure Inquiry</Link>
     </div>
    </section>
    <Footer />
