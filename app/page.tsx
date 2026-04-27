@@ -8,48 +8,45 @@ export default function Home() {
       <Header />
 
       <section style={{padding:'90px 0 70px'}}>
-        <div className="eyebrow">Virginia Trusted Remote Document Execution</div>
-        <h1 className="hero-title">Elegant. Secure. Legally Trusted Electronic Signatures & Online Notary Services.</h1>
-        <p className="hero-copy">A premium client-facing digital execution platform built for urgent legal filings, lender paperwork, business agreements, affidavits, title documents, and high-trust remote verification workflows.</p>
+        <div className="eyebrow">Virginia Online Notary & E-Signature Services</div>
+        <h1 className="hero-title">Get Your Documents Signed, Notarized, and Completed Online — Quickly & Securely.</h1>
+        <p className="hero-copy">From affidavits and power of attorney forms to real estate documents, lender paperwork, and business agreements, E-Sign Virginia makes the online signing and notarization process simple, secure, and convenient from anywhere.</p>
         <div style={{marginTop:'34px',display:'flex',gap:'14px',flexWrap:'wrap'}}>
-          <Link href="/login" className="btn">Open Secure Portal</Link>
-          <Link href="/session" className="btn-secondary">Book Priority Appointment</Link>
+          <Link href="/register" className="btn">Create Secure Account</Link>
+          <Link href="/session" className="btn-secondary">Schedule Online Appointment</Link>
         </div>
       </section>
 
       <section className="grid-3">
-        <div className="card"><div className="metric">24/7</div><h3>Online Availability</h3><p>Fast digital workflow submission for individuals, firms, lenders, and agencies.</p></div>
-        <div className="card"><div className="metric">100%</div><h3>Encrypted Delivery</h3><p>Protected client data routing and premium document handling architecture.</p></div>
-        <div className="card"><div className="metric">2 Portals</div><h3>Dual Workspace Design</h3><p>Dedicated customer and commissioned professional access environments.</p></div>
+        <div className="card"><div className="metric">24/7</div><h3>Online Requests</h3><p>Submit your document details anytime from your phone, tablet, or desktop.</p></div>
+        <div className="card"><div className="metric">Fast</div><h3>Secure Processing</h3><p>Encrypted document handling and guided customer verification every step.</p></div>
+        <div className="card"><div className="metric">Easy</div><h3>Remote Completion</h3><p>No travel, no waiting rooms, no complicated office scheduling.</p></div>
+      </section>
+
+      <section style={{padding:'70px 0 20px'}}>
+        <div className="card" style={{maxWidth:'760px'}}>
+          <div className="eyebrow">Check Your Order Status</div>
+          <h2>Track Your Document Request</h2>
+          <input placeholder="Enter Order / Reference Number" style={{width:'100%',padding:'14px',marginBottom:'12px',marginTop:'16px'}} />
+          <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'16px'}} />
+          <div className="btn">Check Status</div>
+        </div>
       </section>
 
       <section style={{padding:'90px 0'}}>
         <div className="eyebrow">How The Process Works</div>
-        <h2 style={{fontSize:'42px'}}>Designed For Absolute Simplicity</h2>
+        <h2 style={{fontSize:'42px'}}>Simple 4-Step Online Completion</h2>
         <div className="grid-4" style={{marginTop:'24px'}}>
-          {['Create Secure Account','Upload Required Files','Attend Guided Online Meeting','Receive Completed Electronic Copy'].map((step)=><div key={step} className="card">{step}</div>)}
-        </div>
-      </section>
-
-      <section className="grid-2">
-        <div className="card">
-          <div className="eyebrow">Customer Experience</div>
-          <h2>Private Client Dashboard</h2>
-          <p>Track submissions, manage appointments, upload records, verify credentials, and retrieve completed files from one secure location.</p>
-        </div>
-        <div className="card">
-          <div className="eyebrow">Professional Workspace</div>
-          <h2>Commissioned E-Notary Operations Center</h2>
-          <p>Handle verification queues, transaction logs, digital seals, client archives, and completed processing records in an executive-grade portal.</p>
+          {['Create Account','Upload Documents','Meet Online','Receive Completed Copy'].map((step)=><div key={step} className="card">{step}</div>)}
         </div>
       </section>
 
       <section style={{padding:'90px 0 40px'}}>
         <div className="card" style={{textAlign:'center',padding:'60px 30px'}}>
-          <div className="eyebrow">Priority Processing Available</div>
-          <h2 style={{fontSize:'46px',maxWidth:'800px',margin:'16px auto'}}>Need A High-Trust Legal Document Completed Quickly?</h2>
-          <p className="hero-copy" style={{margin:'0 auto'}}>Open your secure account and begin the premium guided digital workflow in minutes.</p>
-          <div style={{marginTop:'26px'}}><Link href="/login" className="btn">Begin Now</Link></div>
+          <div className="eyebrow">Need Help Right Away?</div>
+          <h2 style={{fontSize:'46px',maxWidth:'800px',margin:'16px auto'}}>Start Your Online Document Request In Minutes.</h2>
+          <p className="hero-copy" style={{margin:'0 auto'}}>Create your account, upload your documents, and let our secure online process guide you through the rest.</p>
+          <div style={{marginTop:'26px'}}><Link href="/register" className="btn">Get Started</Link></div>
         </div>
       </section>
 
