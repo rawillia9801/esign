@@ -23,13 +23,34 @@ export default function Home() {
         <div className="card"><div className="metric">Easy</div><h3>Remote Completion</h3><p>No travel, no waiting rooms, no complicated office scheduling.</p></div>
       </section>
 
-      <section style={{padding:'70px 0 20px'}}>
-        <div className="card" style={{maxWidth:'760px'}}>
-          <div className="eyebrow">Check Your Order Status</div>
-          <h2>Track Your Document Request</h2>
-          <input placeholder="Enter Order / Reference Number" style={{width:'100%',padding:'14px',marginBottom:'12px',marginTop:'16px'}} />
-          <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'16px'}} />
-          <div className="btn">Check Status</div>
+      <section style={{padding:'60px 0 20px'}}>
+        <div className="grid-2">
+          <div className="card">
+            <div className="eyebrow">Check Your Order Status</div>
+            <h2>Track Your Document Request</h2>
+            <input placeholder="Enter Order / Reference Number" style={{width:'100%',padding:'14px',marginBottom:'12px',marginTop:'16px'}} />
+            <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'16px'}} />
+            <div className="btn">Check Status</div>
+          </div>
+          <div className="card">
+            <div className="eyebrow">Documents We Commonly Process</div>
+            <p>• Power of Attorney</p>
+            <p>• Affidavits & Sworn Statements</p>
+            <p>• Real Estate / Title Documents</p>
+            <p>• Loan & Lender Packages</p>
+            <p>• Business Agreements & Contracts</p>
+            <p>• General Signature Requests</p>
+          </div>
+        </div>
+      </section>
+
+      <section style={{padding:'90px 0'}}>
+        <div className="eyebrow">Trusted By Virginia Clients</div>
+        <h2 style={{fontSize:'42px'}}>What Customers Are Saying</h2>
+        <div className="grid-3" style={{marginTop:'24px'}}>
+          <div className="card"><p>“Fast, professional, and incredibly convenient. I completed my paperwork from home in less than twenty minutes.”</p><strong>— Melissa R.</strong></div>
+          <div className="card"><p>“Excellent service for urgent lender documents. Smooth online appointment and very secure process.”</p><strong>— James T.</strong></div>
+          <div className="card"><p>“The status tracking and upload system made everything simple. Highly recommend for remote notarization.”</p><strong>— Andrea P.</strong></div>
         </div>
       </section>
 
