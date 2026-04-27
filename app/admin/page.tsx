@@ -2,12 +2,15 @@ import Header from '../../components/Header'
 import ProfileBar from '../../components/ProfileBar'
 import ActivityFeed from '../../components/ActivityFeed'
 import ClaudeReviewPanel from '../../components/ClaudeReviewPanel'
+import ActionModal from '../../components/ActionModal'
+import HelpDrawer from '../../components/HelpDrawer'
 import Link from 'next/link'
 
 export default function AdminDashboard(){
  return (
   <main className="container">
    <Header />
+   <HelpDrawer />
    <div style={{padding:'50px 0'}}>
     <ProfileBar />
     <div className="eyebrow">Executive Operations Overview</div>
@@ -17,7 +20,7 @@ export default function AdminDashboard(){
       <div className="card"><div className="metric">42</div><h3>Open Client Requests</h3></div>
       <div className="card"><div className="metric">11</div><h3>Active RON Sessions</h3></div>
       <div className="card"><div className="metric">$8,450</div><h3>Monthly Processed Revenue</h3></div>
-      <div className="card"><div className="metric">Online</div><h3>Zoho Connection</h3></div>
+      <div className="card"><div className="metric">Online</div><h3>System Connection</h3></div>
     </div>
 
     <div className="grid-2" style={{marginTop:'24px'}}>
@@ -30,9 +33,9 @@ export default function AdminDashboard(){
       </div>
       <div className="card">
         <h3>Automation Health</h3>
-        <p>Zoho Sign: Connected</p>
-        <p>Zoho Meeting: Connected</p>
-        <p>Zoho WorkDrive: Connected</p>
+        <p>Document Dispatch: Connected</p>
+        <p>Meeting Relay: Connected</p>
+        <p>Storage Vault: Connected</p>
         <p>Webhook Relay: Active</p>
       </div>
     </div>
@@ -40,6 +43,10 @@ export default function AdminDashboard(){
     <div className="grid-2" style={{marginTop:'24px'}}>
       <ActivityFeed />
       <ClaudeReviewPanel />
+    </div>
+
+    <div style={{marginTop:'24px'}}>
+      <ActionModal />
     </div>
    </div>
   </main>
