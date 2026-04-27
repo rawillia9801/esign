@@ -30,6 +30,14 @@ export default function NotaryDashboard(){
         <div className="card"><h3>Digital Credential Vault</h3><p>Manage uploaded electronic certificate assets and professional credentials.</p></div>
         <div className="card"><h3>Priority Processing Feed</h3><p>Review urgent customer submissions requiring accelerated completion.</p></div>
       </div>
+
+      <div className="card" style={{marginTop:'22px'}}>
+        <h3>Recent Operations Feed</h3>
+        <p>• Client Credential Verification Approved</p>
+        <p>• Business Agreement Completed and Archived</p>
+        <p>• Priority Customer Appointment Added To Queue</p>
+        <p>• Electronic Credential Vault Synced</p>
+      </div>
     </section>
    </div>
   </main>
