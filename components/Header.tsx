@@ -18,6 +18,7 @@ export default function Header(){
     <Link className="nav-pill" href="/compliance">Compliance</Link>
     <Link className="nav-pill" href="/privacy">Privacy</Link>
     <Link className="nav-pill" href="/contact">Contact</Link>
+    <Link className="btn-secondary" href="/register">Sign Up</Link>
     <Link className="btn" href="/login">Secure Login</Link>
    </nav>
   </header>
