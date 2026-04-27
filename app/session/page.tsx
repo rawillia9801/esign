@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Header from '../../components/Header'
 
 export default function SessionPage(){
@@ -13,7 +14,7 @@ export default function SessionPage(){
       <input placeholder="Preferred Date & Time" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <input placeholder="Document Category" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <textarea placeholder="Additional Processing Notes" style={{width:'100%',padding:'14px',height:'160px'}} />
-      <div style={{marginTop:'20px'}} className="btn">Reserve Appointment Slot</div>
+      <Link href="/confirmation" style={{marginTop:'20px'}} className="btn">Reserve Appointment Slot</Link>
     </div>
    </section>
   </main>
