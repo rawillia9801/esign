@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import ProfileBar from '../../components/ProfileBar'
 import ActivityFeed from '../../components/ActivityFeed'
+import ClaudeReviewPanel from '../../components/ClaudeReviewPanel'
 
 export default function AdminDashboard(){
  return (
@@ -34,8 +35,9 @@ export default function AdminDashboard(){
       </div>
     </div>
 
-    <div style={{marginTop:'24px'}}>
+    <div className="grid-2" style={{marginTop:'24px'}}>
       <ActivityFeed />
+      <ClaudeReviewPanel />
     </div>
    </div>
   </main>
