@@ -30,6 +30,14 @@ export default function CustomerDashboard(){
         <div className="card"><h3>Upcoming Appointment</h3><p>Priority online guided document completion reserved in your queue.</p></div>
         <div className="card"><h3>Fast Upload Center</h3><p>Submit legal files, affidavits, agreements, and business records securely.</p></div>
       </div>
+
+      <div className="card" style={{marginTop:'22px'}}>
+        <h3>Recent Activity Log</h3>
+        <p>• Warranty Deed Uploaded — Pending Review</p>
+        <p>• Appointment Reserved — April 29, 2:30 PM</p>
+        <p>• Verification Credentials Approved</p>
+        <p>• Prior Electronic Copy Delivered</p>
+      </div>
     </section>
    </div>
   </main>
