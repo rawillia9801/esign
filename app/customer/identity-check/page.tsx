@@ -15,6 +15,8 @@ export default function IdentityCheck(){
       <p>Complete Customer Face Match</p>
       <p>Answer Knowledge Authentication Questions</p>
       <p>Confirm Signer Willingness Statement</p>
+      <p style={{color:'#d8b35a'}}>Zoho verification package preparing...</p>
+      <Link href="/api/zoho/meeting" className="btn-secondary" style={{marginTop:'18px',marginRight:'10px'}}>Initialize Zoho Session</Link>
       <Link href="/notary/live-session" className="btn" style={{marginTop:'18px'}}>Proceed To Video Session Queue</Link>
     </div>
    </div>
