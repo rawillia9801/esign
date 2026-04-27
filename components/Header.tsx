@@ -4,10 +4,10 @@ export default function Header(){
  return (
   <header className="header" style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
    <div style={{display:'flex',alignItems:'center',gap:'14px'}}>
-    <div className="brand-mark">E</div>
+    <div className="brand-mark">EV</div>
     <div>
       <div style={{fontWeight:800,fontSize:'18px'}}>E-Sign Virginia</div>
-      <div style={{fontSize:'12px',opacity:.65}}>Secure Online Notary & E-Sign</div>
+      <div style={{fontSize:'12px',opacity:.65}}>Virginia Verified Remote Online Notary</div>
     </div>
    </div>
    <nav style={{display:'flex',gap:'8px',alignItems:'center'}}>
