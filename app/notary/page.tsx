@@ -1,15 +1,36 @@
+import Header from '../../components/Header'
+
 export default function NotaryDashboard(){
  return (
-  <main className="container" style={{paddingTop:'50px',paddingBottom:'60px'}}>
-   <h1>E-Notary Dashboard</h1>
-   <p>Professional commissioned notary workspace.</p>
-   <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'20px',marginTop:'30px'}}>
-    <div className="card"><h3>Pending Clients</h3><p>Review signer appointments awaiting processing.</p></div>
-    <div className="card"><h3>Verification Queue</h3><p>Credential and identity review tasks.</p></div>
-    <div className="card"><h3>Completed Sessions</h3><p>Archive of finalized electronic acts.</p></div>
-    <div className="card"><h3>Digital Seal</h3><p>Manage uploaded electronic certificate assets.</p></div>
-    <div className="card"><h3>Journal Records</h3><p>Electronic notarial log and historical entries.</p></div>
-    <div className="card"><h3>Earnings Center</h3><p>Track processed transactions and payouts.</p></div>
+  <main className="container">
+   <Header />
+   <div className="dashboard-layout">
+    <aside className="card sidebar">
+      <h3>E-Notary Center</h3>
+      <a className="sidebar-link active">Operations</a>
+      <a className="sidebar-link">Pending Clients</a>
+      <a className="sidebar-link">Verification Queue</a>
+      <a className="sidebar-link">Digital Credentials</a>
+      <a className="sidebar-link">Journal Records</a>
+      <a className="sidebar-link">Completed Transactions</a>
+    </aside>
+
+    <section>
+      <div className="eyebrow">Commissioned Professional Workspace</div>
+      <h1 style={{fontSize:'48px'}}>E-Notary Operations Dashboard</h1>
+      <p style={{color:'#b6c2d4'}}>Manage client queues, credential review, processing records, digital seals, and archived transaction completion.</p>
+
+      <div className="grid-3" style={{marginTop:'24px'}}>
+        <div className="card"><div className="metric">08</div><h3>Pending Clients</h3></div>
+        <div className="card"><div className="metric">14</div><h3>Verification Queue</h3></div>
+        <div className="card"><div className="metric">126</div><h3>Completed Logs</h3></div>
+      </div>
+
+      <div className="grid-2" style={{marginTop:'22px'}}>
+        <div className="card"><h3>Digital Credential Vault</h3><p>Manage uploaded electronic certificate assets and professional credentials.</p></div>
+        <div className="card"><h3>Priority Processing Feed</h3><p>Review urgent customer submissions requiring accelerated completion.</p></div>
+      </div>
+    </section>
    </div>
   </main>
  )
