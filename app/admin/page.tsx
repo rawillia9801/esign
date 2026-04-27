@@ -1,5 +1,6 @@
 import Header from '../../components/Header'
 import ProfileBar from '../../components/ProfileBar'
+import ActivityFeed from '../../components/ActivityFeed'
 
 export default function AdminDashboard(){
  return (
@@ -31,6 +32,10 @@ export default function AdminDashboard(){
         <p>Zoho WorkDrive: Connected</p>
         <p>Webhook Relay: Active</p>
       </div>
+    </div>
+
+    <div style={{marginTop:'24px'}}>
+      <ActivityFeed />
     </div>
    </div>
   </main>
