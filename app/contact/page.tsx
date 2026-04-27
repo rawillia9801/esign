@@ -3,15 +3,19 @@ import Footer from '../../components/Footer'
 
 export default function Contact(){
  return (
-  <main className="container" style={{paddingTop:'20px'}}>
+  <main className="container">
    <Header />
-   <h1 style={{marginTop:'40px'}}>Contact E-Sign Virginia</h1>
-   <div className="card" style={{marginTop:'20px'}}>
-    <input placeholder="Your Name" style={{width:'100%',padding:'12px',marginBottom:'12px'}} />
-    <input placeholder="Email" style={{width:'100%',padding:'12px',marginBottom:'12px'}} />
-    <textarea placeholder="How can we help?" style={{width:'100%',padding:'12px',height:'160px'}} />
-    <div className="btn" style={{marginTop:'20px'}}>Send Message</div>
-   </div>
+   <section style={{padding:'70px 0'}}>
+    <div className="eyebrow">Direct Concierge Support</div>
+    <h1 className="hero-title" style={{fontSize:'56px'}}>Contact E-Sign Virginia</h1>
+    <p className="hero-copy">Questions about urgent filings, business onboarding, enterprise volume, or special legal processing requests? Reach our support desk below.</p>
+    <div className="card" style={{marginTop:'26px'}}>
+      <input placeholder="Your Name" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
+      <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
+      <textarea placeholder="Tell us how we can assist" style={{width:'100%',padding:'14px',height:'180px'}} />
+      <div className="btn" style={{marginTop:'20px'}}>Send Secure Inquiry</div>
+    </div>
+   </section>
    <Footer />
   </main>
  )
