@@ -13,8 +13,8 @@ export default function RonControl(){
 
     <div className="grid-4" style={{marginTop:'24px'}}>
       <div className="card">1. Review Identity</div>
-      <div className="card">2. Launch Zoho Meeting</div>
-      <div className="card">3. Send Zoho Sign Package</div>
+      <div className="card">2. Launch Secure Video Session</div>
+      <div className="card">3. Send Signature Package</div>
       <div className="card">4. Archive Record</div>
     </div>
 
@@ -23,7 +23,7 @@ export default function RonControl(){
         <h3>Active Request: ESV-22018</h3>
         <p>Customer ID Uploaded</p>
         <p>KBA Assessment Pending Review</p>
-        <p>Document Package Ready For Zoho Sign</p>
+        <p>Document Package Ready For Signature Dispatch</p>
         <p>Signer Waiting In Queue</p>
         <p style={{color:'#d8b35a'}}>Automation relay standing by...</p>
       </div>
