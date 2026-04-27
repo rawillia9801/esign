@@ -2,6 +2,7 @@ import Header from '../../components/Header'
 import ProfileBar from '../../components/ProfileBar'
 import ActivityFeed from '../../components/ActivityFeed'
 import ClaudeReviewPanel from '../../components/ClaudeReviewPanel'
+import Link from 'next/link'
 
 export default function AdminDashboard(){
  return (
@@ -25,6 +26,7 @@ export default function AdminDashboard(){
         <p>• 7 Urgent Real Estate Closings</p>
         <p>• 3 Lender Packages Awaiting Video Session</p>
         <p>• 5 Business Contract Signature Requests</p>
+        <Link href="/notary/ron-control" className="btn" style={{marginTop:'14px'}}>Open RON Control</Link>
       </div>
       <div className="card">
         <h3>Automation Health</h3>
