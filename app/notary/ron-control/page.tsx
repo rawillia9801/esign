@@ -25,13 +25,14 @@ export default function RonControl(){
         <p>KBA Assessment Pending Review</p>
         <p>Document Package Ready For Zoho Sign</p>
         <p>Signer Waiting In Queue</p>
+        <p style={{color:'#d8b35a'}}>Automation relay standing by...</p>
       </div>
       <div className="card">
         <h3>Operator Actions</h3>
         <Link href="/notary/verification" className="btn-secondary" style={{marginBottom:'10px'}}>Approve Identity</Link><br/>
-        <Link href="/api/zoho/meeting" className="btn-secondary" style={{marginBottom:'10px'}}>Initialize Zoho Meeting</Link><br/>
-        <Link href="/api/zoho/sign" className="btn-secondary" style={{marginBottom:'10px'}}>Prepare Zoho Sign Package</Link><br/>
-        <Link href="/notary/seal-vault" className="btn">Apply Seal & Finalize</Link>
+        <Link href="/api/zoho/meeting" className="btn-secondary" style={{marginBottom:'10px'}}>Preparing Zoho Meeting...</Link><br/>
+        <Link href="/api/zoho/sign" className="btn-secondary" style={{marginBottom:'10px'}}>Sending Zoho Sign Package...</Link><br/>
+        <Link href="/notary/seal-vault" className="btn">Archive & Finalize Request</Link>
       </div>
     </div>
    </div>
