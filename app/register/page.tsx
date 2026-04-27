@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Header from '../../components/Header'
 
 export default function RegisterPage(){
@@ -13,7 +14,7 @@ export default function RegisterPage(){
       <input placeholder="Email Address" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <input placeholder="Phone Number" style={{width:'100%',padding:'14px',marginBottom:'12px'}} />
       <input placeholder="Create Password" style={{width:'100%',padding:'14px',marginBottom:'18px'}} />
-      <div className="btn">Create Secure Account</div>
+      <Link href="/confirmation" className="btn">Create Secure Account</Link>
     </div>
    </section>
   </main>
