@@ -10,7 +10,8 @@ export default function CustomerDashboard(){
     <aside className="card sidebar">
       <h3>Client Portal</h3>
       <Link href="/customer" className="sidebar-link active">Overview</Link>
-      <Link href="/customer/documents" className="sidebar-link">Upload Files</Link>
+      <Link href="/customer/upload-center" className="sidebar-link">Upload Center</Link>
+      <Link href="/customer/ron-workflow" className="sidebar-link">RON Workflow</Link>
       <Link href="/customer/appointments" className="sidebar-link">Appointments</Link>
       <Link href="/customer/verification" className="sidebar-link">Verification</Link>
       <Link href="/customer/billing" className="sidebar-link">Billing</Link>
@@ -31,7 +32,7 @@ export default function CustomerDashboard(){
 
       <div className="grid-2" style={{marginTop:'22px'}}>
         <div className="card"><h3>Upcoming Appointment</h3><p>Reference ESV-22018 reserved for April 29, 2:30 PM.</p></div>
-        <div className="card"><h3>Fast Upload Center</h3><p>Submit legal files, affidavits, agreements, and business records securely.</p></div>
+        <div className="card"><h3>Fast Upload Center</h3><p>Submit legal files, affidavits, agreements, and business records securely through the dedicated intake workspace.</p><Link href="/customer/upload-center" className="btn" style={{marginTop:'14px'}}>Open Upload Center</Link></div>
       </div>
 
       <div className="card" style={{marginTop:'22px'}}>
