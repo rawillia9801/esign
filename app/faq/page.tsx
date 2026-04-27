@@ -3,14 +3,17 @@ import Footer from '../../components/Footer'
 
 export default function FAQ(){
  return (
-  <main className="container" style={{paddingTop:'20px'}}>
+  <main className="container">
    <Header />
-   <h1 style={{marginTop:'40px'}}>Frequently Asked Questions</h1>
-   <div style={{display:'grid',gap:'16px',marginTop:'25px'}}>
-    <div className="card"><h3>How long does online processing take?</h3><p>Most standard appointments are completed in under fifteen minutes.</p></div>
-    <div className="card"><h3>Do I need to travel?</h3><p>No. The platform is designed for secure remote completion from your device.</p></div>
-    <div className="card"><h3>Can businesses use recurring services?</h3><p>Yes, dedicated account workflows are available for firms and agencies.</p></div>
-   </div>
+   <section style={{padding:'70px 0'}}>
+    <div className="eyebrow">Client Questions Answered</div>
+    <h1 className="hero-title" style={{fontSize:'56px'}}>Frequently Asked Questions</h1>
+    <div style={{display:'grid',gap:'18px',marginTop:'28px'}}>
+      <div className="card"><h3>How long does standard digital processing take?</h3><p>Most standard customer appointments are completed in approximately fifteen minutes depending on file volume.</p></div>
+      <div className="card"><h3>Is in-person travel required?</h3><p>No. The workflow is intentionally structured for secure guided remote completion from your phone or computer.</p></div>
+      <div className="card"><h3>Do you support business recurring accounts?</h3><p>Yes. Firms, agencies, lenders, and title groups may request dedicated recurring volume support.</p></div>
+    </div>
+   </section>
    <Footer />
   </main>
  )
